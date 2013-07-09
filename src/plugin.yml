@@ -1,0 +1,20 @@
+main: net.castegaming.plugins.globalplugins.GlobalPlugins
+name: GlobalPlugins
+version: 0.1
+author: kwek20
+description: A plugin made to handle plugins for multiple servers
+website: www.castegaming.net
+load-before: [Factions, NoLagg, TabAPI, TagAPI, BattleTags]
+
+permissions:
+    globalplugins.reload:
+        description: Makes the player able to reload globalplugins
+        default: OP
+    globalplugins.scan:
+        description: Makes the player able to rescan globalplugins files
+        default: OP
+commands:
+   globalplugins:
+      description: base command of globalplugins
+      usage: type /globalplugins to see an info message, and /globalplugins reload to reload the config
+      aliases: [gp, globalplugin]
