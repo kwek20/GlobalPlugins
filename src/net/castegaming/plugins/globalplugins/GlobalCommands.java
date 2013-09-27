@@ -16,7 +16,8 @@ public class GlobalCommands {
 		if (args.length > 0){
 			if ((args[0].equalsIgnoreCase("reload") || args[0].equalsIgnoreCase("r")) && sender.hasPermission("globalplugins.reload")){
 				plugin.reloadConfig();
-				sender.sendMessage("GlobalCommands config reloaded!");
+				plugin.config.refreshConfig();
+				sender.sendMessage(plugin.getPrefix() + "GlobalCommands config reloaded!");
 			} else if (args[0].equalsIgnoreCase("scan") && sender.hasPermission("globalplugins.scan")){
 				int found = plugin.getGlobalConfig().scan();
 				if (found > 0){

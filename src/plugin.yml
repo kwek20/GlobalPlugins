@@ -1,10 +1,11 @@
 main: net.castegaming.plugins.globalplugins.GlobalPlugins
 name: GlobalPlugins
-version: 0.1
+version: 0.1a
 author: kwek20
 description: A plugin made to handle plugins for multiple servers
 website: www.castegaming.net
-load-before: [Factions, NoLagg, TabAPI, TagAPI, BattleTags]
+load: startup
+load-before: [Factions, NoLagg, TabAPI, TagAPI, BattleTags, Multiverse-Core]
 
 permissions:
     globalplugins.reload:
